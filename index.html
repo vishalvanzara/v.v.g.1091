@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+ function person(first,last,age,gender,hight){
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.gender = gender;
+    this.hight = hight;
+}
+
+person.nationality = "Indian";
+
+const Man = ("Mitesh","swami",10,"Male",5.6);
+const Woman =  ("Laxmi","swami",50,"Female",5.5);
+
+document.getElementById("demo").innerHTML = "The Person Is "+person.nationality;
+    </script>
+</body>
+</html>
